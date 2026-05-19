@@ -58,6 +58,8 @@ section h3 {
 }
 
 .activity-card {
+  display: block;
+  overflow: visible;
   margin-bottom: 15px;
   padding: 15px;
   border: 1px solid #ddd;
@@ -72,6 +74,106 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+
+.participants-section {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 16px 18px 14px 18px;
+  background: linear-gradient(90deg, #e3eaff 0%, #f5f8ff 100%);
+  border-radius: 10px;
+  border: 1.5px solid #b3c6ff;
+  box-shadow: 0 2px 8px rgba(26, 35, 126, 0.07);
+  transition: box-shadow 0.2s;
+}
+
+.participants-section:hover {
+  box-shadow: 0 4px 16px rgba(26, 35, 126, 0.13);
+}
+
+
+.participants-section h5 {
+  margin-bottom: 12px;
+  color: #283593;
+  font-size: 1.08rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  border-left: 4px solid #5c6bc0;
+  padding-left: 10px;
+}
+
+
+
+.participants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  background: #f7faff;
+  border-radius: 6px;
+  padding: 10px 14px;
+  box-shadow: 0 1px 3px rgba(44, 62, 80, 0.04);
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0 6px 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.participant-item:hover {
+  background: #e3eaff;
+}
+
+.participant-email {
+  color: #263238;
+  font-size: 1.01rem;
+  word-break: break-all;
+}
+
+.delete-icon {
+  color: #c62828;
+  font-size: 1.1rem;
+  margin-left: 12px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  transition: background 0.15s, color 0.15s;
+}
+.delete-icon:hover {
+  background: #ffebee;
+  color: #a31515;
+}
+
+
+.participants-section li {
+  margin-bottom: 7px;
+  line-height: 1.5;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+
+.participants-section li:hover {
+  background: #e3eaff;
+}
+
+
+.participants-section .no-participants {
+  margin: 0;
+  color: #7b7b8b;
+  font-size: 0.98rem;
+  font-style: italic;
+  background: #f7faff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border-left: 3px solid #b3c6ff;
 }
 
 .form-group {
